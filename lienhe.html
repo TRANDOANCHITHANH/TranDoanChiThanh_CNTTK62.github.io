@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="img/png" size="32x32" href="./Logo.png">
+    <script type="text/javascript" src="./lienhe.js"></script>
+    <title>Liên Hệ</title>
+</head>
+
+<body>
+    <header class="Menu">
+        <a href="./trangchu.html" class="logo" title="Trang Chủ">
+            <img src="Logo.png" />
+        </a>
+        <ul class="nav-tabs">
+            <li>
+                <a href="#Tintuc " class="active">Tin tức</a>
+            </li>
+            <li><a href="#Tapchi" class="active">Tạp chí</a></li>
+            <li><a href="#Video" class="active">Video</a></li>
+            <li><a href="#Vanhoa" class="active">Văn hóa</a></li>
+            <li><a href="#Login" class="active">Thể thao</a></li>
+            <li><a href="#Giaitri" class="active">Giải trí</a></li>
+            <li><a href="#Congnghe" class="active">Công nghệ</a></li>
+            <li><a href="#Thegioi" class="active">Thế giới</a></li>
+            <li><a href="./lienhe.html" target="_blank" class="active">Liên Hệ</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="main">
+            <div class="full-content">
+              
+                    <div class="contact-form">
+                        <h2>Contact Form</h2>
+                        <div class="row">
+                                    <input type="text" id="username" name="username" placeholder="Họ tên"/>
+                                    <span id="username_error"></span>
+                        </div>
+                        <div class="row">  
+                            <input type="text" id="email" name="email" placeholder="Email"/>
+                            <span id="email_error"></span>
+                </div>
+                        <div class="row">  
+                                    <input type="text" id="subject" name="subject" placeholder="Subject"/>
+                                    <span id="subject_error"></span>
+                        </div>
+                        
+                        <div class="row">  
+                                    <input type="text" id="message" name="message" placeholder="Message">
+                                    <span id="message_error"></span>
+                        </div>
+                        <div class="sub">
+                                    <input type="submit" onclick="return validate();" id="btn" name="btn" value="Đăng ký"/>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="main">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2360.1070772391763!2d106.79407311111503!3d10.845367054226728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527158a0a5b81%3A0xf45c5d34ac580517!2zUGjDom4gaGnhu4d1IFRyxrDhu51uZyDEkOG6oWkgaOG7jWMgR1RWVCB04bqhaSBUcC4gSOG7kyBDaMOtIE1pbmg!5e1!3m2!1svi!2sus!4v1669452834232!5m2!1svi!2sus"
+                width="400px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="footer__info">
+                <div class="left">
+                    <a href="./trangchu.html" class="logo" title="The SaiGoner"></a>
+                   
+                    © 2003-2022 Bản quyền thuộc về Báo The SaiGoner. Cấm sao chép dưới mọi hình thức nếu không có sự
+                    chấp thuận bằng văn bản. <br>
+                    Phát triển bởi Roth Technologies, JSC.
+                </div>
+                <div class="right">
+                    <nav class="footer__tool">
+                        <a href="./lienhe.html" target="_blank" title="Liên Hệ">Liên Hệ</a>
+                        <a href="#" title="Quảng cáo">Quảng cáo</a>
+                        <a href="#" title="Tuyển Dụng">Tuyển Dụng</a>
+                    </nav>
+                    <!-- Tổng biên tập: <strong>Nguyễn Văn A</strong> <br>
+                    Phó tổng biên tập: <strong>Văn B</strong> <br>
+                    Phó tổng biên tập: <strong>Trần Văn C</strong> <br>
+                    Ủy viên Ban biên tập - Tổng Thư ký tòa soạn: <strong>Trần Văn D</strong> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
