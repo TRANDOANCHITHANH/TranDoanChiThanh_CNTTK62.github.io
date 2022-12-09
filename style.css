@@ -25,7 +25,14 @@ div {
     outline-color: initial;
     outline-style: initial;
     outline-width: 0px;
-
+    display: block;
+}
+a {
+    text-decoration: none;
+    display: block;
+    outline: 0;
+    /* transition: all .2s ease-in-out; */
+    /* padding: 12px 0px 0px; */
 }
 img, table {
     max-width: 100%;
@@ -37,7 +44,59 @@ img {
 img, svg {
     vertical-align: middle;
 }
+main {
+    font-family: Geneva;
+}
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+dl, ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+article {
+    display: block;
+}
+
+
+article, aside, figcaption, figure, footer, header, hgroup, legend, main, nav, section {
+    display: block;
+}
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+*, .slick-slider, ::after, ::before {
+    box-sizing: border-box;
+}
+a, body {
+    color: #333;
+}
+body, caption {
+    text-align: left;
+}
 .Menu .logo {
     display: inline-flex;
     align-items: center;
@@ -145,6 +204,7 @@ img, svg {
 .trending ul li a {
     color: #888;
     font-size: 14px;
+    text-decoration: none;
 }
 .trending ul li a:hover{
     color: #04b2f7;
@@ -154,6 +214,9 @@ img, svg {
 }
 .trending:after {
     display: table;
+}
+.carousel-inner p{ 
+   font-size: 16px;
 }
 .full-content {
     padding: 18px 20px 20px;
@@ -165,14 +228,15 @@ img, svg {
     display: flex;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    border-bottom: 1px solid rgba(196, 193, 193, 0.382);
 }
 .tags::after {
     display: table;
     clear: both;
 }
 .tags .story--parent {
-    width: 50%;
-    margin-right: 20px;
+    width: 70%;
+    margin: 20px 20px 20px 0px;
 }
 .story, .story--media, .story__thumb {
     position: relative;
@@ -199,11 +263,12 @@ img, svg {
 }
 
 .story__title {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 20px;
     color: #333;
     font-weight: 700;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 .story .meta {
     font-size: 12px;
@@ -229,7 +294,7 @@ img, svg {
     color: #888;
 }
 .full-content .story--parent .summary {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 22px;
     margin-top: 5px;
 }
@@ -238,6 +303,7 @@ img, svg {
     line-height: 20px;
     line-height: 2rem;
     color: #888;
+    font-size: 18px;
 }
 .summary * {
     display: inline;
@@ -257,8 +323,7 @@ px
 }
 
 .story--primary {
-    padding-right: 20px;
-    margin-bottom: 20px;
+    margin:20px 0px 0px ;
     background: #fff;
     -webkit-box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
     box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
@@ -298,8 +363,7 @@ px
     margin-bottom: 3px;
 }
 .zone--timeline .summary {
-    font-size: 13px;
-    font-size: 1.3rem;
+    
     margin-bottom: 5px;
 }
 .summary a {
@@ -352,6 +416,7 @@ px
 .main {
     width: 980px;
     margin: auto;
+    background-color: white;
 }
 .c-content::after, .full-content::after, .main::after, .trending:after {
     display: table;
@@ -399,72 +464,10 @@ px
     color: #00739f;
     display: inline;
     margin-left: 15px;
+    text-decoration: none;
 }
 .footer__info::after {
     display: table;
-}
-main {
-    font-family: Geneva;
-}
-
-h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-dl, ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-    display: block;
-    outline: 0;
-    transition: all .2s ease-in-out;
-    /* padding: 12px 0px 0px; */
-}
-
-article {
-    display: block;
-}
-
-
-article, aside, figcaption, figure, footer, header, hgroup, legend, main, nav, section {
-    display: block;
-}
-p {
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-*, .slick-slider, ::after, ::before {
-    box-sizing: border-box;
-}
-div {
-    display: block;
-}   
-a, body {
-    color: #333;
-}
-body, caption {
-    text-align: left;
 }
 .slick-slider, html {
     -webkit-tap-highlight-color: transparent;
@@ -664,10 +667,10 @@ fieldset {
     width: 400px;
     padding: 2rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    /* background-color: #fff; */
     border-radius: 7px;
     margin:auto;
-    background: linear-gradient(135deg, #178ede, #8318ae);
+    margin-top: 76px;
+    background: linear-gradient(135deg, #178ede, #13aa2e);
 }
 
 .contact-form h2 {
@@ -724,7 +727,7 @@ fieldset {
 .contact-form textarea:focus {
   transform: scale(1.11);
 }
-.col-1 {width: 8.33%;}
+/* .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -735,7 +738,7 @@ fieldset {
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;} */
  /* For mobile phones: */
 /* @media only screen and (max-width: 768px) {
 
@@ -743,24 +746,28 @@ fieldset {
     width: 100%;
   }
 } */
-@media (max-width: 800px) {
+/* Responsive */
+@media (max-width: 700px) {
     .footer .main {
-      /* flex-direction: column; */
+      flex-direction: column;
       align-items: center;
     }
     .footer .main .map {
       align-items: center;
     }
     .footer .main .footer__info .left{
-      float: right;
+     align-items: center;
+   
     }
     .footer .main .footer__info .left .logo{
         text-align: center;
     }
     .footer .main .footer__info .right {
       margin-top: 12px;
+      text-align: center !important;
     }
     .footer .main .footer__info .right .footer__tool {
       text-align:center !important;
     }
   }
+  

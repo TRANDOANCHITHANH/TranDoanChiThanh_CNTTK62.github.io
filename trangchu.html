@@ -10,11 +10,15 @@
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" referrerpolicy="no-referrer" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
      <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" type="img/png" size="32x32" href="./Logo.png">
-   
+
     <title>The SaiGoner</title>
 </head>
 
@@ -23,7 +27,7 @@
         <a href="./trangchu.html" class="logo" title="Trang Chủ">
             <img src="Logo.png" />
         </a>
-        <ul class="nav-tabs">
+        <ul>
             <li>
                 <a href="#Tintuc " class="active">Tin tức</a>
             </li>
@@ -40,27 +44,85 @@
     <main>
         <div class="main">
 
-            <div class="container-lg wrap-header">
+            <div class="container-lg">
+
+
                 <div class="trending">
                     <label>Tiêu điểm</label>
                     <ul>
-        
+
                         <li><a href="#" title="World Cup 2022">World Cup 2022</a></li>
-        
+
                         <li><a href="#" title="Tết">Tết Nguyên Đán</a></li>
-        
+
                         <li><a href="#" title="Vạn Thịnh Phát">Vạn Thịnh Phát</a></li>
-        
+
                         <li><a href="#" title="Covid-19">Covid-19</a></li>
-        
+
                         <li><a href="#" title="Xăng dầu">Xăng dầu</a></li>
-        
+
                         <li><a href="#" title="Biến động tỉ giá">Biến động tỉ giá</a></li>
                     </ul>
                 </div>
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="./baiviet1.html">
+                                <img src="./image/slider1.jpg"
+                                    alt="Thethao" class="d-block" style="width:100%">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Thể Thao</h3>
+                                <p>Lịch thi đấu và trực tiếp World Cup 2022 trên VTV</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./baiviet2.html">
+                                <img src="./image/iphone.jpg" alt="Congnghe" class="d-block" style="width:100%">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Công Nghệ</h3>
+                                <p>Apple tạo đột phá trong thiết kế iPhone 15</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="./image/slider3.jpg"
+                                    alt="Quocphong" class="d-block" style="width:100%">
+                            </a>
+                            <div class="carousel-caption">
+                                <h3>Quốc Phòng</h3>
+                                <p>Cận cảnh vũ khí, khí tài hiện đại tại Triển lãm Quốc phòng quốc tế 2022</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <!-- <div class="container-fluid mt-3">
+                        <h3>Carousel Example</h3>
+                        <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+                      </div> -->
+            </div>
+            <div class="section-content owl-carousel owl-theme" id="news-silder">
                 <div class="tags">
-                    <article class="story story--parent col-7">
-                        <a class="story__thumb" href="./baiviet2.html"
+                    <article class="story story--parent">
+                        <a class="story__thumb" href="#"
                             title="Google tiết lộ lỗ hổng đe dọa hàng triệu thiết bị Android">
 
                             <img src="image/content1.jpg"
@@ -68,7 +130,7 @@
                         </a>
 
                         <h2>
-                            <a class="story__title" href="./baiviet2.html"
+                            <a class="story__title" href="#"
                                 title="Google tiết lộ lỗ hổng đe dọa hàng triệu thiết bị Android" data-vr-headline="">
                                 Google tiết lộ lỗ hổng đe dọa hàng triệu thiết bị Android
                             </a>
@@ -90,13 +152,13 @@
                     </article>
                     <div class="feature">
                         <article class="story story--primary">
-                            <a class="story__thumb" href="./baiviet1.html"
+                            <a class="story__thumb" href="#"
                                 title="Sự thật bất ngờ đằng sau khoảnh khắc gây sốt của Ronaldo và Messi">
                                 <img src="image/316270502-726109578875585-8337688966502940005-n-1718.jpg"
                                     alt="Sự thật bất ngờ đằng sau khoảnh khắc gây sốt của Ronaldo và Messi">
                             </a>
                             <h2>
-                                <a class="story__title" href="./baiviet1.html"
+                                <a class="story__title" href="#"
                                     title="Sự thật bất ngờ đằng sau khoảnh khắc gây sốt của Ronaldo và Messi"
                                     data-vr-headline="">
                                     Sự thật bất ngờ đằng sau khoảnh khắc gây sốt của Ronaldo và Messi
@@ -169,34 +231,37 @@
 
 
                             <a class="story__thumb" href="#"
-                                title="Sài Gòn tiệm xưa quán cũ: Dân chơi 'hệ' cơm tấm, bánh mì Sài Gòn">
+                                title="Vũ khí mới cho mục tiêu lớn của Triều Tiên">
 
-                                <img src="image/content5.jpg"
-                                    alt="Sài Gòn tiệm xưa quán cũ: Dân chơi 'hệ' cơm tấm, bánh mì Sài Gòn">
+                                <img src="image/content.jpg"
+                                    alt="Vũ khí mới cho mục tiêu lớn của Triều Tiên">
                             </a>
 
                             <h2>
                                 <a class="story__title" href="#"
-                                    title="Sài Gòn tiệm xưa quán cũ: Dân chơi 'hệ' cơm tấm, bánh mì Sài Gòn"
+                                    title="Vũ khí mới cho mục tiêu lớn của Triều Tiên"
                                     data-vr-headline="">
 
-                                    Elon Musk sắp cấy chip máy tính vào não người
+                                    Vũ khí mới cho mục tiêu lớn của Triều Tiên
                                 </a>
                             </h2>
                             <div class="meta">
 
                                 <span class="time">
-                                    07:36 17/09/2022
+                                    15:59 - 28/11/2022
                                 </span>
 
                                 <span><i class="icon-bubble"></i>4</span>
                             </div>
                         </article>
                     </div>
+                    </section>
+                    </aside>
                 </div>
                 <div class="keyword">
                     <div class="zone--timeline">
                         <div class="relative">
+
                             <article class="story story--primary">
                                 <a class="story__thumb" href="#" title="Elon Musk sắp cấy chip máy tính vào não người">
                                     <img class=" lazyloaded" src="image/content5.jpg"
@@ -254,16 +319,17 @@
                                 </div>
                             </article>
                             <article class="story story--primary">
-                                <a class="story__thumb" href="#" title="Samsung ấn định ngày ra mắt Galaxy S23">
+                                <a class="story__thumb" href="#"
+                                    title="Asus ra mắt laptop màn hình gập Zenbook 17 Fold OLED">
                                     <span class="video-icon "><i class="triangle"></i></span>
-                                    <img class=" lazyloaded" src="image/content7.jpg"
-                                        alt="Samsung ấn định ngày ra mắt Galaxy S23">
+                                    <img class=" lazyloaded" src="./image/content7.png"
+                                        alt="Asus ra mắt laptop màn hình gập Zenbook 17 Fold OLED">
                                 </a>
 
                                 <h2>
-                                    <a class="story__title" href="#" title="Samsung ấn định ngày ra mắt Galaxy S23">
-
-                                        Samsung ấn định ngày ra mắt Galaxy S23
+                                    <a class="story__title" href="#"
+                                        title="Asus ra mắt laptop màn hình gập Zenbook 17 Fold OLED">
+                                        Asus ra mắt laptop màn hình gập Zenbook 17 Fold OLED
                                     </a>
                                 </h2>
                                 <div class="meta">
@@ -275,25 +341,27 @@
                                     <span><i class="icon-bubble"></i>0</span>
                                 </div>
                                 <div class="summary">
-                                    <p>Theo các trang tin Hàn Quốc, dòng flagship Galaxy S23 sẽ được ra mắt tại sự kiện
-                                        Unpacked vào đầu tháng 2/2023.
+                                    <p>Asus vừa công bố chiếc máy tính xách tay màn hình gập 17,3 inch đầu tiên trên thế
+                                        giới Zenbook 17 Fold OLED (UX9702). Chiếc laptop đầy đột phá là cú bắt tay hợp
+                                        tác giữa hai công ty công nghệ nổi tiếng Asus và Intel.</p>
                                 </div>
                             </article>
                             <article class="story story--primary">
 
 
                                 <a class="story__thumb" href="#"
-                                    title="Isaac đáp trả trước bình luận nổi tiếng chỉ nhờ vào vẻ đẹp trai">
+                                    title=" Rapper Karik tham gia lồng tiếng bom tấn 'Avatar: The way of water'">
                                     <span class="video-icon "><i class="triangle"></i></span>
-                                    <img class=" lazyloaded" src="image/content8.jpg"
-                                        alt="Isaac đáp trả trước bình luận nổi tiếng chỉ nhờ vào vẻ đẹp trai">
+                                    <img class=" lazyloaded"
+                                        src="./image/content8.jpg"
+                                        alt=" Rapper Karik tham gia lồng tiếng bom tấn 'Avatar: The way of water'">
                                 </a>
 
                                 <h2>
                                     <a class="story__title" href="#"
-                                        title="Isaac đáp trả trước bình luận nổi tiếng chỉ nhờ vào vẻ đẹp trai">
+                                        title=" Rapper Karik tham gia lồng tiếng bom tấn 'Avatar: The way of water'">
 
-                                        Isaac đáp trả trước bình luận nổi tiếng chỉ nhờ vào vẻ đẹp trai
+                                        Rapper Karik tham gia lồng tiếng bom tấn 'Avatar: The way of water'
                                     </a>
                                 </h2>
                                 <div class="meta">
@@ -303,6 +371,11 @@
                                     </span>
 
                                     <span><i class="icon-bubble"></i>0</span>
+                                </div>
+                                <div class="summary">
+                                    <p>Rapper Karik sẽ góp giọng vào phiên bản lồng tiếng Việt của siêu phẩm Avatar: The
+                                        way of water ra mắt vào tháng 12 tới đây. Được biết, anh sẽ vào vai một nhân vật
+                                        trong thủy tộc.</p>
                                 </div>
                             </article>
 
@@ -342,18 +415,15 @@
     <footer class="footer">
 
         <div class="main">
-            <iframe class="map"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2360.1070772391763!2d106.79407311111503!3d10.845367054226728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527158a0a5b81%3A0xf45c5d34ac580517!2zUGjDom4gaGnhu4d1IFRyxrDhu51uZyDEkOG6oWkgaOG7jWMgR1RWVCB04bqhaSBUcC4gSOG7kyBDaMOtIE1pbmg!5e1!3m2!1svi!2sus!4v1669452834232!5m2!1svi!2sus"
-                width="400px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+
+
             <div class="footer__info">
                 <div class="left">
                     <a href="./trangchu.html" class="logo" title="The SaiGoner"></a>
                     <p>
-                    © 2003-2022 Bản quyền thuộc về Báo The SaiGoner. Cấm sao chép dưới mọi hình thức nếu không có sự
-                    chấp thuận bằng văn bản. <br>
-                    Phát triển bởi Roth Technologies, JSC.
+                        © 2003-2022 Bản quyền thuộc về Báo The SaiGoner. Cấm sao chép dưới mọi hình thức nếu không có sự
+                        chấp thuận bằng văn bản. <br>
+                        Phát triển bởi Roth Technologies, JSC.
                     </p>
                 </div>
                 <div class="right">
@@ -362,16 +432,20 @@
                         <a href="#" title="Quảng cáo">Quảng cáo</a>
                         <a href="#" title="Tuyển Dụng">Tuyển Dụng</a>
                     </nav>
-                    <!-- Tổng biên tập: <strong>Nguyễn Văn A</strong> <br>
-                    Phó tổng biên tập: <strong>Văn B</strong> <br>
-                    Phó tổng biên tập: <strong>Trần Văn C</strong> <br>
-                    Ủy viên Ban biên tập - Tổng Thư ký tòa soạn: <strong>Trần Văn D</strong> -->
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2360.1070772391763!2d106.79407311111503!3d10.845367054226728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527158a0a5b81%3A0xf45c5d34ac580517!2zUGjDom4gaGnhu4d1IFRyxrDhu51uZyDEkOG6oWkgaOG7jWMgR1RWVCB04bqhaSBUcC4gSOG7kyBDaMOtIE1pbmg!5e1!3m2!1svi!2sus!4v1669452834232!5m2!1svi!2sus"
+                        width="400px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 
