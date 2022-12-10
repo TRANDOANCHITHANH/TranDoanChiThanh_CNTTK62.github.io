@@ -308,9 +308,9 @@ body, caption {
 .summary * {
     display: inline;
 }
-.tags .feature {
+/* .tags .feature {
     width: 47.5%;
-}
+} */
 .feature, .spotlight {
     width: 390px
 px
