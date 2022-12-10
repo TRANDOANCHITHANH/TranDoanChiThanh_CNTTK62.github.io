@@ -168,9 +168,9 @@ body, caption {
     position: relative;
    
  }
-.Menu .nav-tabs li a:hover{
-    border-bottom:solid 3px #04b2f7;
-    color: #04b2f7;
+.Menu ul li a:hover{
+    background-color: #ced4da;
+ 
 }
 .trending {
     font-size: 12px;
