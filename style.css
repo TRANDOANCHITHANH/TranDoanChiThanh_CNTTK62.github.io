@@ -570,7 +570,7 @@ fieldset {
 .full-content .l-content {
     padding-right: 20px;
     border-right: 1px solid #f7f7f7;
-    width: 660px;
+    /* width: 660px; */
 }
 .l-content .headline{
     font-size: 20px;
