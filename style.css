@@ -31,8 +31,6 @@ a {
     text-decoration: none;
     display: block;
     outline: 0;
-    /* transition: all .2s ease-in-out; */
-    /* padding: 12px 0px 0px; */
 }
 img, table {
     max-width: 100%;
@@ -75,8 +73,6 @@ dl, ol, ul {
 article {
     display: block;
 }
-
-
 article, aside, figcaption, figure, footer, header, hgroup, legend, main, nav, section {
     display: block;
 }
@@ -120,16 +116,14 @@ body, caption {
     grid-column: 2/span 10;
     border-bottom:1px solid rgba(101, 100, 100, 0.247);
     margin-bottom: 50px;
-}
-.Menu {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 7000;
     box-shadow: 0 0 5px 2px #ccc;
-
 }
+
 .Menu ul {
     margin: 0px;
     padding: 0px;
@@ -148,9 +142,7 @@ body, caption {
     float: left;
     display: list-item;
 }
-/* .nav-tabs .active{
-    padding: 15px 8px 7px;
-} */
+
 .Menu ul li a {
     font-family: Graphik;
     font-size: 18px;
@@ -251,9 +243,6 @@ body, caption {
     margin-bottom: 10px;
 }
 
-/* .full-content .story--parent .story__thumb {
-    width: 50%;
-} */
 .story__thumb img {
     width: 100%;
 }
@@ -308,13 +297,9 @@ body, caption {
 .summary * {
     display: inline;
 }
-/* .tags .feature {
-    width: 47.5%;
-} */
+
 .feature, .spotlight {
-    width: 390px
-px
-;
+    width: 390px;
     float: left;
 }
 .tags .story--primary {
@@ -447,9 +432,6 @@ px
     margin-bottom: 10px;
 }
 
-/* .rss-info, .search--result__heading, .tags {
-    border-bottom: 1px solid #eee;
-} */
 .footer__info .right {
     width: 40%;
     text-align: right;
@@ -557,16 +539,7 @@ fieldset {
 .rating img {
     max-width: 16px;
 }
-/* .full-content .l-content {
-    padding-right: 20px;
-    border-right: 1px solid #f7f7f7;
-}
 
-.l-content {
-    width: 660px;
-    float: left;
-    margin-bottom: 30px;
-} */
 .full-content .l-content {
     padding-right: 20px;
     border-right: 1px solid #f7f7f7;
@@ -720,32 +693,12 @@ fieldset {
     background-color: rgb(255, 255, 255);
     color: #04b2f7;
 }
-/* .hidden {
-    display: none;
-  } */
+
 .contact-form input:focus,
 .contact-form textarea:focus {
   transform: scale(1.11);
 }
-/* .col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;} */
- /* For mobile phones: */
-/* @media only screen and (max-width: 768px) {
 
-  [class*="col-"] {
-    width: 100%;
-  }
-} */
 /* Responsive */
 @media (max-width: 700px) {
     .footer .main {
